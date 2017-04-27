@@ -1,0 +1,658 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">ChromeTest</td><td class="numi">105</td><td class="numi">105</td><td class="numi">0</td><td class="numi_attn">27</td><td class="numi">7,507.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">ChromeTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">automationFramework.TestCases.BalanceHistoryTest</td><td><a href="#m1"><b>viewBalanceHistoryFilterTest</b>  </a></td><td class="numi">1</td><td>1493311095756</td><td class="numi">120980</td></tr>
+<tr class="failedeven"><td rowspan="1">automationFramework.TestCases.CreateCustomerAPITest</td><td><a href="#m2"><b>createNewCustomerApi</b>  </a></td><td class="numi">1</td><td>1493311475503</td><td class="numi">9125</td></tr>
+<tr class="failedodd"><td rowspan="2">automationFramework.TestCases.CreateCustomerTest</td><td><a href="#m3"><b>createNewCustomer</b>  </a></td><td class="numi">1</td><td>1493311581951</td><td class="numi">15503</td></tr><tr class="failedodd"><td><a href="#m4"><b>createNewCustomerGmailPlus</b>  </a></td><td class="numi">1</td><td>1493311755330</td><td class="numi">17369</td></tr>
+<tr class="failedeven"><td rowspan="4">automationFramework.TestCases.CreateUnregistredCustomerTest</td><td><a href="#m5"><b>registerNewCustomerNoRecordFound</b>  </a></td><td class="numi">1</td><td>1493312259633</td><td class="numi">49059</td></tr><tr class="failedeven"><td><a href="#m6"><b>registerNewCustomerTranistTokenFound</b>  </a></td><td class="numi">1</td><td>1493312311168</td><td class="numi">53259</td></tr><tr class="failedeven"><td><a href="#m7"><b>registerNewCustomerInvalidToken</b>  </a></td><td class="numi">1</td><td>1493312366768</td><td class="numi">19883</td></tr><tr class="failedeven"><td><a href="#m8"><b>registerNewCustomerSubysystemPage</b>  </a></td><td class="numi">1</td><td>1493312389721</td><td class="numi">128442</td></tr>
+<tr class="failedodd"><td rowspan="3">automationFramework.TestCases.EmailTest</td><td><a href="#m9"><b>checkEmailUpdateContact</b>  </a></td><td class="numi">1</td><td>1493313192403</td><td class="numi">20774</td></tr><tr class="failedodd"><td><a href="#m10"><b>checkEmailResetPassword</b>  </a></td><td class="numi">1</td><td>1493313215625</td><td class="numi">828066</td></tr><tr class="failedodd"><td><a href="#m11"><b>checkEmailDeleteFunding</b>  </a></td><td class="numi">1</td><td>1493314046304</td><td class="numi">20833</td></tr>
+<tr class="failedeven"><td rowspan="2">automationFramework.TestCases.SearchTest</td><td><a href="#m12"><b>searchCustomerVerifiedTest</b>  </a></td><td class="numi">1</td><td>1493316531071</td><td class="numi">7408</td></tr><tr class="failedeven"><td><a href="#m13"><b>searchCustomerCheckDuplicateTestFname</b>  </a></td><td class="numi">1</td><td>1493316578855</td><td class="numi">7708</td></tr>
+<tr class="failedodd"><td rowspan="6">automationFramework.TestCases.SearchTest2</td><td><a href="#m14"><b>searchCustomerCheckDuplicateTestPhone</b>  </a></td><td class="numi">1</td><td>1493316607991</td><td class="numi">17671</td></tr><tr class="failedodd"><td><a href="#m15"><b>searchCustomerCheckDuplicateTestEmailPhone</b>  </a></td><td class="numi">1</td><td>1493316638050</td><td class="numi">8359</td></tr><tr class="failedodd"><td><a href="#m16"><b>searchCustomerCheckDuplicateTestAll</b>  </a></td><td class="numi">1</td><td>1493316648754</td><td class="numi">7562</td></tr><tr class="failedodd"><td><a href="#m17"><b>searchCustomerVerifiedThreeInfoTest</b>  </a></td><td class="numi">1</td><td>1493316668629</td><td class="numi">8592</td></tr><tr class="failedodd"><td><a href="#m18"><b>searchCustomerNotVerifiedThreeInfoTest</b>  </a></td><td class="numi">1</td><td>1493316679557</td><td class="numi">8459</td></tr><tr class="failedodd"><td><a href="#m19"><b>searchCustomerClickNotVerified</b>  </a></td><td class="numi">1</td><td>1493316690353</td><td class="numi">10368</td></tr>
+<tr class="failedeven"><td rowspan="2">automationFramework.TestCases.TravelHistoryTest</td><td><a href="#m20"><b>viewTravelHistoryRegistredCustomerSubAccount</b>  </a></td><td class="numi">1</td><td>1493317065839</td><td class="numi">438005</td></tr><tr class="failedeven"><td><a href="#m21"><b>viewTravelHistoryUnregistredCustomer</b>  </a></td><td class="numi">1</td><td>1493317506325</td><td class="numi">413185</td></tr>
+<tr class="failedodd"><td rowspan="3">automationFramework.TestCases.UpdateAddressTest</td><td><a href="#m22"><b>addNewAddress</b>  </a></td><td class="numi">1</td><td>1493317922077</td><td class="numi">8880</td></tr><tr class="failedodd"><td><a href="#m23"><b>updateAddress</b>  </a></td><td class="numi">1</td><td>1493318128494</td><td class="numi">8554</td></tr><tr class="failedodd"><td><a href="#m24"><b>addNewAddressCheckRequiredFields</b>  </a></td><td class="numi">1</td><td>1493318158808</td><td class="numi">67946</td></tr>
+<tr class="failedeven"><td rowspan="3">automationFramework.TestCases.UpdateContactTest</td><td><a href="#m25"><b>updateContact</b>  </a></td><td class="numi">1</td><td>1493318243340</td><td class="numi">15300</td></tr><tr class="failedeven"><td><a href="#m26"><b>updateContactCancel</b>  </a></td><td class="numi">1</td><td>1493318261070</td><td class="numi">19406</td></tr><tr class="failedeven"><td><a href="#m27"><b>updateContactInvalidPhone</b>  </a></td><td class="numi">1</td><td>1493318334484</td><td class="numi">14600</td></tr>
+<tr><th colspan="4">ChromeTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">automationFramework.TestCases.BalanceHistoryTest</td><td><a href="#m28"><b>viewBalanceHistoryDetailsRegisteredDynamic</b>  </a></td><td class="numi">1</td><td>1493311012110</td><td class="numi">81171</td></tr><tr class="passedodd"><td><a href="#m29"><b>viewBalanceHistoryRegisteredDynamic</b>  </a></td><td class="numi">1</td><td>1493311219220</td><td class="numi">75583</td></tr><tr class="passedodd"><td><a href="#m30"><b>viewBalanceHistoryUnregisteredDynamic</b>  </a></td><td class="numi">1</td><td>1493311297085</td><td class="numi">176146</td></tr>
+<tr class="passedeven"><td rowspan="6">automationFramework.TestCases.CreateCustomerDBTest</td><td><a href="#m31"><b>createNewCustomerDBCheckContactTable</b>  </a></td><td class="numi">1</td><td>1493311487069</td><td class="numi">16507</td></tr><tr class="passedeven"><td><a href="#m32"><b>createNewCustomerDBCheckAccountTable</b>  </a></td><td class="numi">1</td><td>1493311505888</td><td class="numi">14089</td></tr><tr class="passedeven"><td><a href="#m33"><b>createNewCustomerDBCheckAddressTable</b>  </a></td><td class="numi">1</td><td>1493311522145</td><td class="numi">13943</td></tr><tr class="passedeven"><td><a href="#m34"><b>createNewCustomerDBCheckSecurityTable</b>  </a></td><td class="numi">1</td><td>1493311538321</td><td class="numi">13938</td></tr><tr class="passedeven"><td><a href="#m35"><b>createNewCustomerDBCheckPhoneTable</b>  </a></td><td class="numi">1</td><td>1493311554490</td><td class="numi">13802</td></tr><tr class="passedeven"><td><a href="#m36"><b>createNewCustomerCancelDBCheck</b>  </a></td><td class="numi">1</td><td>1493311570555</td><td class="numi">9170</td></tr>
+<tr class="passedodd"><td rowspan="11">automationFramework.TestCases.CreateCustomerTest</td><td><a href="#m37"><b>createCustomerCancel</b>  </a></td><td class="numi">1</td><td>1493311599796</td><td class="numi">10322</td></tr><tr class="passedodd"><td><a href="#m38"><b>createCustomerContactTypeNotSelected</b>  </a></td><td class="numi">1</td><td>1493311612381</td><td class="numi">10574</td></tr><tr class="passedodd"><td><a href="#m39"><b>createCustomerInvalidEmail</b>  </a></td><td class="numi">1</td><td>1493311625220</td><td class="numi">12490</td></tr><tr class="passedodd"><td><a href="#m40"><b>createCustomerInvalidPin</b>  </a></td><td class="numi">1</td><td>1493311639947</td><td class="numi">12711</td></tr><tr class="passedodd"><td><a href="#m41"><b>createCustomerInvalidUserName</b>  </a></td><td class="numi">1</td><td>1493311654956</td><td class="numi">11554</td></tr><tr class="passedodd"><td><a href="#m42"><b>createCustomerDuplicateUserName</b>  </a></td><td class="numi">1</td><td>1493311668878</td><td class="numi">23634</td></tr><tr class="passedodd"><td><a href="#m43"><b>createCustomerInvalidPhone</b>  </a></td><td class="numi">1</td><td>1493311694718</td><td class="numi">7656</td></tr><tr class="passedodd"><td><a href="#m44"><b>createCustomerNameMissing</b>  </a></td><td class="numi">1</td><td>1493311704587</td><td class="numi">7378</td></tr><tr class="passedodd"><td><a href="#m45"><b>createCustomerEmailMissing</b>  </a></td><td class="numi">1</td><td>1493311714143</td><td class="numi">7578</td></tr><tr class="passedodd"><td><a href="#m46"><b>createCustomerInvalidPin2</b>  </a></td><td class="numi">1</td><td>1493311723990</td><td class="numi">13738</td></tr><tr class="passedodd"><td><a href="#m47"><b>createCustomerPostalCodeMissing</b>  </a></td><td class="numi">1</td><td>1493311740002</td><td class="numi">13141</td></tr>
+<tr class="passedeven"><td rowspan="13">automationFramework.TestCases.CreateFundingTest</td><td><a href="#m48"><b>createFundingSource</b>  </a></td><td class="numi">1</td><td>1493311775302</td><td class="numi">17641</td></tr><tr class="passedeven"><td><a href="#m49"><b>createFundingSourceNewBillingAddress</b>  </a></td><td class="numi">1</td><td>1493311795409</td><td class="numi">19214</td></tr><tr class="passedeven"><td><a href="#m50"><b>createFundingSourceCancel</b>  </a></td><td class="numi">1</td><td>1493311816852</td><td class="numi">73694</td></tr><tr class="passedeven"><td><a href="#m51"><b>createFundingSourceTypeNotSelected</b>  </a></td><td class="numi">1</td><td>1493311892854</td><td class="numi">14229</td></tr><tr class="passedeven"><td><a href="#m52"><b>createCustomerInvalidEmail</b>  </a></td><td class="numi">1</td><td>1493311909400</td><td class="numi">12787</td></tr><tr class="passedeven"><td><a href="#m53"><b>createCustomerFundingInvalidCC</b>  </a></td><td class="numi">1</td><td>1493311924470</td><td class="numi">25788</td></tr><tr class="passedeven"><td><a href="#m54"><b>createCustomerFundingInvalidName</b>  </a></td><td class="numi">1</td><td>1493311952853</td><td class="numi">18872</td></tr><tr class="passedeven"><td><a href="#m55"><b>createFundingSourceInvalidPanTooLong</b>  </a></td><td class="numi">1</td><td>1493311973987</td><td class="numi">15138</td></tr><tr class="passedeven"><td><a href="#m56"><b>createFundingSourceInvalidCCType</b>  </a></td><td class="numi">1</td><td>1493311991383</td><td class="numi">14163</td></tr><tr class="passedeven"><td><a href="#m57"><b>createFundingSourceInvalidExpirationDate</b>  </a></td><td class="numi">1</td><td>1493312007742</td><td class="numi">15870</td></tr><tr class="passedeven"><td><a href="#m58"><b>createFundingSourceTwoCards</b>  </a></td><td class="numi">1</td><td>1493312025789</td><td class="numi">28031</td></tr><tr class="passedeven"><td><a href="#m59"><b>createFundingSourceChangePrimaryCard</b>  </a></td><td class="numi">1</td><td>1493312056220</td><td class="numi">23858</td></tr><tr class="passedeven"><td><a href="#m60"><b>createFundingSourceChangePrimaryCardCancel</b>  </a></td><td class="numi">1</td><td>1493312082471</td><td class="numi">25589</td></tr>
+<tr class="passedodd"><td rowspan="2">automationFramework.TestCases.CreateOrderDBTest</td><td><a href="#m61"><b>createOrderDBcheck</b>  </a></td><td class="numi">1</td><td>1493312110388</td><td class="numi">29405</td></tr><tr class="passedodd"><td><a href="#m62"><b>createOrderCancelDBcheck</b>  </a></td><td class="numi">1</td><td>1493312142290</td><td class="numi">20525</td></tr>
+<tr class="passedeven"><td rowspan="4">automationFramework.TestCases.CreateOrderTest</td><td><a href="#m63"><b>createOrderSubmit</b>  </a></td><td class="numi">1</td><td>1493312165021</td><td class="numi">25716</td></tr><tr class="passedeven"><td><a href="#m64"><b>createOrderExpiredCard</b>  </a></td><td class="numi">1</td><td>1493312192996</td><td class="numi">16738</td></tr><tr class="passedeven"><td><a href="#m65"><b>createOrderCancel</b>  </a></td><td class="numi">1</td><td>1493312211917</td><td class="numi">15993</td></tr><tr class="passedeven"><td><a href="#m66"><b>createOrderNewFundingSource</b>  </a></td><td class="numi">1</td><td>1493312230620</td><td class="numi">26730</td></tr>
+<tr class="passedodd"><td rowspan="3">automationFramework.TestCases.DeleteFundingTest</td><td><a href="#m67"><b>deleteFundingSource</b>  </a></td><td class="numi">1</td><td>1493312520596</td><td class="numi">15473</td></tr><tr class="passedodd"><td><a href="#m68"><b>deleteFundingSourceClose</b>  </a></td><td class="numi">1</td><td>1493312538467</td><td class="numi">15966</td></tr><tr class="passedodd"><td><a href="#m69"><b>deleteFundingSourceCancel</b>  </a></td><td class="numi">1</td><td>1493312556697</td><td class="numi">16486</td></tr>
+<tr class="passedeven"><td rowspan="3">automationFramework.TestCases.EmailTest</td><td><a href="#m70"><b>checkEmailNewCustomer</b>  </a></td><td class="numi">1</td><td>1493312575367</td><td class="numi">75476</td></tr><tr class="passedeven"><td><a href="#m71"><b>checkEmailCreateOrder</b>  </a></td><td class="numi">1</td><td>1493312653254</td><td class="numi">322661</td></tr><tr class="passedeven"><td><a href="#m72"><b>checkEmailLinkAccount</b>  </a></td><td class="numi">1</td><td>1493312978387</td><td class="numi">211567</td></tr>
+<tr class="passedodd"><td rowspan="7">automationFramework.TestCases.LinkAccountAPITest</td><td><a href="#m73"><b>linkAccountTest</b>  </a></td><td class="numi">1</td><td>1493314069642</td><td class="numi">262063</td></tr><tr class="passedodd"><td><a href="#m74"><b>linkAccountAlreadyLinkedTest</b>  </a></td><td class="numi">1</td><td>1493314334160</td><td class="numi">268960</td></tr><tr class="passedodd"><td><a href="#m75"><b>linkAccountFailureTest</b>  </a></td><td class="numi">1</td><td>1493314605514</td><td class="numi">18520</td></tr><tr class="passedodd"><td><a href="#m76"><b>linkAccountCancelTest</b>  </a></td><td class="numi">1</td><td>1493314626288</td><td class="numi">12025</td></tr><tr class="passedodd"><td><a href="#m77"><b>linkAccountCardExpirationMissingTest</b>  </a></td><td class="numi">1</td><td>1493314640595</td><td class="numi">17517</td></tr><tr class="passedodd"><td><a href="#m78"><b>linkAccountBankAccountMissingTest</b>  </a></td><td class="numi">1</td><td>1493314662244</td><td class="numi">16326</td></tr><tr class="passedodd"><td><a href="#m79"><b>linkAccountMessageTest</b>  </a></td><td class="numi">1</td><td>1493314680936</td><td class="numi">300342</td></tr>
+<tr class="passedeven"><td rowspan="2">automationFramework.TestCases.LinkAccountDBTest</td><td><a href="#m80"><b>createLinkAccountDBcheck</b>  </a></td><td class="numi">1</td><td>1493314983662</td><td class="numi">302380</td></tr><tr class="passedeven"><td><a href="#m81"><b>createLinkAccountCancellDBcheck</b>  </a></td><td class="numi">1</td><td>1493315288379</td><td class="numi">310932</td></tr>
+<tr class="passedodd"><td rowspan="7">automationFramework.TestCases.LinkAccountTest</td><td><a href="#m82"><b>linkAccountTest</b>  </a></td><td class="numi">1</td><td>1493315601538</td><td class="numi">254231</td></tr><tr class="passedodd"><td><a href="#m83"><b>linkAccountAlreadyLinkedTest</b>  </a></td><td class="numi">1</td><td>1493315858276</td><td class="numi">260381</td></tr><tr class="passedodd"><td><a href="#m84"><b>linkAccountFailureTest</b>  </a></td><td class="numi">1</td><td>1493316120925</td><td class="numi">16992</td></tr><tr class="passedodd"><td><a href="#m85"><b>linkAccountCancelTest</b>  </a></td><td class="numi">1</td><td>1493316140088</td><td class="numi">16977</td></tr><tr class="passedodd"><td><a href="#m86"><b>linkAccountCardExpirationMissingTest</b>  </a></td><td class="numi">1</td><td>1493316159317</td><td class="numi">10657</td></tr><tr class="passedodd"><td><a href="#m87"><b>linkAccountBankAccountMissingTest</b>  </a></td><td class="numi">1</td><td>1493316172162</td><td class="numi">9577</td></tr><tr class="passedodd"><td><a href="#m88"><b>linkAccountMessageTest</b>  </a></td><td class="numi">1</td><td>1493316184014</td><td class="numi">308314</td></tr>
+<tr class="passedeven"><td rowspan="3">automationFramework.TestCases.ResetPasswordTest</td><td><a href="#m89"><b>resetPassword</b>  </a></td><td class="numi">1</td><td>1493316494604</td><td class="numi">9858</td></tr><tr class="passedeven"><td><a href="#m90"><b>resetPasswordCancel</b>  </a></td><td class="numi">1</td><td>1493316506709</td><td class="numi">9790</td></tr><tr class="passedeven"><td><a href="#m91"><b>resetPasswordClose</b>  </a></td><td class="numi">1</td><td>1493316518676</td><td class="numi">10135</td></tr>
+<tr class="passedodd"><td rowspan="5">automationFramework.TestCases.SearchTest</td><td><a href="#m92"><b>searchCustomerNotVerifiedTest</b>  </a></td><td class="numi">1</td><td>1493316540796</td><td class="numi">8316</td></tr><tr class="passedodd"><td><a href="#m93"><b>searchCustomerNoResultsTest</b>  </a></td><td class="numi">1</td><td>1493316551380</td><td class="numi">7559</td></tr><tr class="passedodd"><td><a href="#m94"><b>searchCustomerTypeNotSelected</b>  </a></td><td class="numi">1</td><td>1493316561106</td><td class="numi">6312</td></tr><tr class="passedodd"><td><a href="#m95"><b>searchCustomerInvalidEmail</b>  </a></td><td class="numi">1</td><td>1493316569614</td><td class="numi">7040</td></tr><tr class="passedodd"><td><a href="#m96"><b>searchCustomerCheckDuplicateTestLname</b>  </a></td><td class="numi">1</td><td>1493316588949</td><td class="numi">6879</td></tr>
+<tr class="passedeven"><td rowspan="3">automationFramework.TestCases.SearchTest2</td><td><a href="#m97"><b>searchCustomerCheckDuplicateTestFnameLname</b>  </a></td><td class="numi">1</td><td>1493316598098</td><td class="numi">7565</td></tr><tr class="passedeven"><td><a href="#m98"><b>searchCustomerCheckDuplicateTestEmail</b>  </a></td><td class="numi">1</td><td>1493316628008</td><td class="numi">7826</td></tr><tr class="passedeven"><td><a href="#m99"><b>searchNewSearchButton</b>  </a></td><td class="numi">1</td><td>1493316658815</td><td class="numi">7562</td></tr>
+<tr class="passedodd"><td rowspan="2">automationFramework.TestCases.TokenSearchAPITest</td><td><a href="#m100"><b>tokenVerificationLinkAccount</b>  </a></td><td class="numi">1</td><td>1493316703179</td><td class="numi">14759</td></tr><tr class="passedodd"><td><a href="#m101"><b>tokenVerificationLinkAccountNewSearch</b>  </a></td><td class="numi">1</td><td>1493316720173</td><td class="numi">20941</td></tr>
+<tr class="passedeven"><td rowspan="16">automationFramework.TestCases.TokenSearchTest</td><td><a href="#m102"><b>searchTokenInvalidMonth</b>  </a></td><td class="numi">1</td><td>1493316743306</td><td class="numi">7221</td></tr><tr class="passedeven"><td><a href="#m103"><b>searchTokenInvalidYear</b>  </a></td><td class="numi">1</td><td>1493316752794</td><td class="numi">9102</td></tr><tr class="passedeven"><td><a href="#m104"><b>searchTokenMissingBankCard</b>  </a></td><td class="numi">1</td><td>1493316764111</td><td class="numi">6811</td></tr><tr class="passedeven"><td><a href="#m105"><b>searchTokenNewSearch</b>  </a></td><td class="numi">1</td><td>1493316773230</td><td class="numi">7294</td></tr><tr class="passedeven"><td><a href="#m106"><b>searchTokenNoRecordFound</b>  </a></td><td class="numi">1</td><td>1493316782747</td><td class="numi">7972</td></tr><tr class="passedeven"><td><a href="#m107"><b>searchTokenNoRecordFoundNewSearch</b>  </a></td><td class="numi">1</td><td>1493316792991</td><td class="numi">7241</td></tr><tr class="passedeven"><td><a href="#m108"><b>searchTokenInvalidTokenSearch</b>  </a></td><td class="numi">1</td><td>1493316802424</td><td class="numi">8346</td></tr><tr class="passedeven"><td><a href="#m109"><b>searchTokenInvalidTokenNewSearch</b>  </a></td><td class="numi">1</td><td>1493316813021</td><td class="numi">9887</td></tr><tr class="passedeven"><td><a href="#m110"><b>searchUnregistredCustomer</b>  </a></td><td class="numi">1</td><td>1493316825141</td><td class="numi">16712</td></tr><tr class="passedeven"><td><a href="#m111"><b>searchRegistredCustomer</b>  </a></td><td class="numi">1</td><td>1493316844080</td><td class="numi">41633</td></tr><tr class="passedeven"><td><a href="#m112"><b>searchRegistredCustomerVerifiedThreeInfo</b>  </a></td><td class="numi">1</td><td>1493316887976</td><td class="numi">41268</td></tr><tr class="passedeven"><td><a href="#m113"><b>viewRegistredCustomerSubsystemPage</b>  </a></td><td class="numi">1</td><td>1493316931721</td><td class="numi">45868</td></tr><tr class="passedeven"><td><a href="#m114"><b>searchTokenVerification</b>  </a></td><td class="numi">1</td><td>1493316979809</td><td class="numi">14037</td></tr><tr class="passedeven"><td><a href="#m115"><b>tokenSearchAuthenticationError</b>  </a></td><td class="numi">1</td><td>1493316996073</td><td class="numi">6312</td></tr><tr class="passedeven"><td><a href="#m116"><b>tokenSearchWithSpace</b>  </a></td><td class="numi">1</td><td>1493317004567</td><td class="numi">39498</td></tr><tr class="passedeven"><td><a href="#m117"><b>searchTokenClickHome</b>  </a></td><td class="numi">1</td><td>1493317046295</td><td class="numi">17257</td></tr>
+<tr class="passedodd"><td rowspan="3">automationFramework.TestCases.UpdateAddressTest</td><td><a href="#m118"><b>addNewAddressCancel</b>  </a></td><td class="numi">1</td><td>1493317933262</td><td class="numi">192908</td></tr><tr class="passedodd"><td><a href="#m119"><b>updateAddressCancel</b>  </a></td><td class="numi">1</td><td>1493318139464</td><td class="numi">16872</td></tr><tr class="passedodd"><td><a href="#m120"><b>addNewAddressInvalidData</b>  </a></td><td class="numi">1</td><td>1493318229168</td><td class="numi">11974</td></tr>
+<tr class="passedeven"><td rowspan="8">automationFramework.TestCases.UpdateContactTest</td><td><a href="#m121"><b>updateContactAndAddress</b>  </a></td><td class="numi">1</td><td>1493318283107</td><td class="numi">19038</td></tr><tr class="passedeven"><td><a href="#m122"><b>updateContactAndAddressCancel</b>  </a></td><td class="numi">1</td><td>1493318304389</td><td class="numi">15314</td></tr><tr class="passedeven"><td><a href="#m123"><b>updateContactCheckRequiredFields</b>  </a></td><td class="numi">1</td><td>1493318322105</td><td class="numi">10102</td></tr><tr class="passedeven"><td><a href="#m124"><b>updateContactInvalidEmail</b>  </a></td><td class="numi">1</td><td>1493318351395</td><td class="numi">9721</td></tr><tr class="passedeven"><td><a href="#m125"><b>updateContactInvalidUserName</b>  </a></td><td class="numi">1</td><td>1493318363405</td><td class="numi">9706</td></tr><tr class="passedeven"><td><a href="#m126"><b>updateContactInvalidPin</b>  </a></td><td class="numi">1</td><td>1493318375294</td><td class="numi">10810</td></tr><tr class="passedeven"><td><a href="#m127"><b>updateContactSecurityAnswermissing</b>  </a></td><td class="numi">1</td><td>1493318388367</td><td class="numi">9891</td></tr><tr class="passedeven"><td><a href="#m128"><b>updateContactOtherPhonesMissing</b>  </a></td><td class="numi">1</td><td>1493318400546</td><td class="numi">10202</td></tr>
+<tr class="passedodd"><td rowspan="4">automationFramework.TestCases.UpdateFundingTest</td><td><a href="#m129"><b>updateNonPrimaryFundingTest</b>  </a></td><td class="numi">1</td><td>1493318412945</td><td class="numi">31936</td></tr><tr class="passedodd"><td><a href="#m130"><b>updateNonPrimaryFundingCancelTest</b>  </a></td><td class="numi">1</td><td>1493318447059</td><td class="numi">26087</td></tr><tr class="passedodd"><td><a href="#m131"><b>updatePrimaryFundingTest</b>  </a></td><td class="numi">1</td><td>1493318475325</td><td class="numi">21724</td></tr><tr class="passedodd"><td><a href="#m132"><b>updatePrimaryFundingCancelTest</b>  </a></td><td class="numi">1</td><td>1493318499206</td><td class="numi">17202</td></tr>
+</table>
+<h1>ChromeTest</h1>
+<h2 id="m1">automationFramework.TestCases.UpdateAddressTest:updateAddress</h2>
+<div style="padding-left:3em">
+<p>expected [DR1kurUmRcgK@mailinator.com] but found [WkBExv2MEd6X@mailinator.com]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.UpdateAddressTest.updateAddress(UpdateAddressTest.java:115)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">automationFramework.TestCases.SearchTest2:searchCustomerCheckDuplicateTestEmailPhone</h2>
+<div style="padding-left:3em">
+<p>expected [4166254367] but found [4166254367,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.SearchTest2.searchCustomerCheckDuplicateTestEmailPhone(SearchTest2.java:103)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">automationFramework.TestCases.CreateCustomerAPITest:createNewCustomerApi</h2>
+<div style="padding-left:3em">
+<p>expected [4033311371] but found [4033311371,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.CreateCustomerAPITest.createNewCustomerApi(CreateCustomerAPITest.java:73)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">automationFramework.TestCases.UpdateContactTest:updateContactInvalidPhone</h2>
+<div style="padding-left:3em">
+<p>expected [phone[0].number errors.general.invalid.phone.number] but found []</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.UpdateContactTest.updateContactInvalidPhone(UpdateContactTest.java:188)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">automationFramework.TestCases.SearchTest2:searchCustomerVerifiedThreeInfoTest</h2>
+<div style="padding-left:3em">
+<p>expected [4033311371] but found [4033311371,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.SearchTest2.searchCustomerVerifiedThreeInfoTest(SearchTest2.java:232)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">automationFramework.TestCases.CreateUnregistredCustomerTest:registerNewCustomerSubysystemPage</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;customerContacts_list_tbl&apos;]/div/div[1]/table/tbody/tr/td[1]&quot;}
+  (Session info: chrome=57.0.2987.133)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;NACTS-081729&apos;, ip: &apos;149.63.89.30&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\200123\AppData\Local\Temp\scoped_dir27888_5689}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 2fa1f30e6b9e5096f2dfa29a47eb9626
+*** Element info: {Using=xpath, value=//*[@id=&apos;customerContacts_list_tbl&apos;]/div/div[1]/table/tbody/tr/td[1]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+<br/>at automationFramework.PageObjects.NewCustomerDisplayPage.getFname(NewCustomerDisplayPage.java:35)
+<br/>at automationFramework.TestCases.CreateUnregistredCustomerTest.verifyNewCustomerCreation(CreateUnregistredCustomerTest.java:179)
+<br/>at automationFramework.TestCases.CreateUnregistredCustomerTest.registerNewCustomerSubysystemPage(CreateUnregistredCustomerTest.java:168)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">automationFramework.TestCases.CreateUnregistredCustomerTest:registerNewCustomerNoRecordFound</h2>
+<div style="padding-left:3em">
+<p>expected [5472646174] but found [5472646174,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.CreateUnregistredCustomerTest.verifyNewCustomerCreation(CreateUnregistredCustomerTest.java:185)
+<br/>at automationFramework.TestCases.CreateUnregistredCustomerTest.registerNewCustomerNoRecordFound(CreateUnregistredCustomerTest.java:63)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">automationFramework.TestCases.EmailTest:checkEmailUpdateContact</h2>
+<div style="padding-left:3em">
+<p>expected [indy] but found [robert]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.CoreTest.updateContact(CoreTest.java:104)
+<br/>at automationFramework.TestCases.EmailTest.checkEmailUpdateContact(EmailTest.java:167)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">automationFramework.TestCases.SearchTest2:searchCustomerNotVerifiedThreeInfoTest</h2>
+<div style="padding-left:3em">
+<p>expected [4033311371] but found [4033311371,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.SearchTest2.searchCustomerNotVerifiedThreeInfoTest(SearchTest2.java:277)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">automationFramework.TestCases.EmailTest:checkEmailDeleteFunding</h2>
+<div style="padding-left:3em">
+<p>Customer Funding Source Update Email Test Failed expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at automationFramework.TestCases.EmailTest.checkEmailDeleteFunding(EmailTest.java:227)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">automationFramework.TestCases.TravelHistoryTest:viewTravelHistoryRegistredCustomerSubAccount</h2>
+<div style="padding-left:3em">
+<p>expected [railstation] but found []</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.TravelHistoryTest.viewTravelHistoryRegistredCustomerSubAccount(TravelHistoryTest.java:140)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">automationFramework.TestCases.SearchTest2:searchCustomerCheckDuplicateTestAll</h2>
+<div style="padding-left:3em">
+<p>expected [4166254367] but found [4166254367,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.SearchTest2.searchCustomerCheckDuplicateTestAll(SearchTest2.java:122)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">automationFramework.TestCases.CreateCustomerTest:createNewCustomerGmailPlus</h2>
+<div style="padding-left:3em">
+<p>expected [7033322717] but found [7033322717,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.CreateCustomerTest.createNewCustomerGmailPlus(CreateCustomerTest.java:357)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">automationFramework.TestCases.CreateCustomerTest:createNewCustomer</h2>
+<div style="padding-left:3em">
+<p>expected [7511171754] but found [7511171754,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.CreateCustomerTest.createNewCustomer(CreateCustomerTest.java:62)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">automationFramework.TestCases.UpdateAddressTest:addNewAddress</h2>
+<div style="padding-left:3em">
+<p>expected [4033311371] but found [4033311371,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.UpdateAddressTest.addNewAddress(UpdateAddressTest.java:59)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">automationFramework.TestCases.SearchTest2:searchCustomerClickNotVerified</h2>
+<div style="padding-left:3em">
+<p>expected [4033311371] but found [4033311371,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.SearchTest2.searchCustomerClickNotVerified(SearchTest2.java:309)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">automationFramework.TestCases.SearchTest2:searchCustomerCheckDuplicateTestPhone</h2>
+<div style="padding-left:3em">
+<p>expected [4166254367] but found [4166254367,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.SearchTest2.searchCustomerCheckDuplicateTestPhone(SearchTest2.java:76)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">automationFramework.TestCases.UpdateAddressTest:addNewAddressCheckRequiredFields</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;searchCustomer_customerType_sel&apos;]&quot;}
+  (Session info: chrome=57.0.2987.133)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;NACTS-081729&apos;, ip: &apos;149.63.89.30&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\200123\AppData\Local\Temp\scoped_dir36444_12826}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3fc59b82ae3fc92a077d965c4357ea84
+*** Element info: {Using=xpath, value=.//*[@id=&apos;searchCustomer_customerType_sel&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+<br/>at automationFramework.PageObjects.SearchPage.clickCustomerType(SearchPage.java:64)
+<br/>at automationFramework.TestCases.UpdateAddressTest.createNewCustomer(UpdateAddressTest.java:216)
+<br/>at automationFramework.TestCases.UpdateAddressTest.addNewAddressCheckRequiredFields(UpdateAddressTest.java:165)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">automationFramework.TestCases.SearchTest:searchCustomerVerifiedTest</h2>
+<div style="padding-left:3em">
+<p>expected [4033311371] but found [4033311371,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.SearchTest.searchCustomerVerifiedTest(SearchTest.java:76)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">automationFramework.TestCases.SearchTest:searchCustomerCheckDuplicateTestFname</h2>
+<div style="padding-left:3em">
+<p>expected [robert] but found [Robert]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.SearchTest.searchCustomerCheckDuplicateTestFname(SearchTest.java:176)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">automationFramework.TestCases.UpdateContactTest:updateContactCancel</h2>
+<div style="padding-left:3em">
+<p>expected [4033311371] but found [4033311371,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.UpdateContactTest.updateContactCancel(UpdateContactTest.java:88)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">automationFramework.TestCases.UpdateContactTest:updateContact</h2>
+<div style="padding-left:3em">
+<p>expected [indy] but found [robert]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.UpdateContactTest.updateContact(UpdateContactTest.java:60)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">automationFramework.TestCases.CreateUnregistredCustomerTest:registerNewCustomerInvalidToken</h2>
+<div style="padding-left:3em">
+<p>expected [7766141175] but found [7766141175,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.CreateUnregistredCustomerTest.verifyNewCustomerCreation(CreateUnregistredCustomerTest.java:185)
+<br/>at automationFramework.TestCases.CreateUnregistredCustomerTest.registerNewCustomerInvalidToken(CreateUnregistredCustomerTest.java:130)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">automationFramework.TestCases.CreateUnregistredCustomerTest:registerNewCustomerTranistTokenFound</h2>
+<div style="padding-left:3em">
+<p>expected [6610372263] but found [6610372263,undefined,undefined]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.CreateUnregistredCustomerTest.verifyNewCustomerCreation(CreateUnregistredCustomerTest.java:185)
+<br/>at automationFramework.TestCases.CreateUnregistredCustomerTest.registerNewCustomerTranistTokenFound(CreateUnregistredCustomerTest.java:104)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">automationFramework.TestCases.TravelHistoryTest:viewTravelHistoryUnregistredCustomer</h2>
+<div style="padding-left:3em">
+<p>expected [railstation] but found []</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at automationFramework.TestCases.TravelHistoryTest.viewTravelHistoryUnregistredCustomer(TravelHistoryTest.java:83)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">automationFramework.TestCases.BalanceHistoryTest:viewBalanceHistoryFilterTest</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;balanceHistory_list_tbl&apos;]/div/div/table/tbody/tr/td[3]/span&quot;}
+  (Session info: chrome=57.0.2987.133)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;NACTS-081729&apos;, ip: &apos;149.63.89.30&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\200123\AppData\Local\Temp\scoped_dir34392_5187}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3195774d3fd93453fe43598f510b513c
+*** Element info: {Using=xpath, value=//*[@id=&apos;balanceHistory_list_tbl&apos;]/div/div/table/tbody/tr/td[3]/span}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+<br/>at automationFramework.PageObjects.BalanceHistoryPage.getPurse(BalanceHistoryPage.java:45)
+<br/>at automationFramework.TestCases.BalanceHistoryTest.viewBalanceHistoryFilterTest(BalanceHistoryTest.java:135)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">automationFramework.TestCases.EmailTest:checkEmailResetPassword</h2>
+<div style="padding-left:3em">
+<p>Password Reset Verification Email Test Failed expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at automationFramework.TestCases.EmailTest.checkEmailResetPassword(EmailTest.java:198)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">automationFramework.TestCases.TokenSearchTest:searchTokenInvalidMonth</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">automationFramework.TestCases.CreateFundingTest:createFundingSourceInvalidExpirationDate</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">automationFramework.TestCases.DeleteFundingTest:deleteFundingSource</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">automationFramework.TestCases.CreateCustomerTest:createCustomerEmailMissing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">automationFramework.TestCases.LinkAccountTest:linkAccountCardExpirationMissingTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">automationFramework.TestCases.SearchTest:searchCustomerCheckDuplicateTestLname</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">automationFramework.TestCases.UpdateFundingTest:updateNonPrimaryFundingCancelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">automationFramework.TestCases.CreateCustomerTest:createCustomerCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">automationFramework.TestCases.LinkAccountAPITest:linkAccountMessageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">automationFramework.TestCases.ResetPasswordTest:resetPasswordCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">automationFramework.TestCases.CreateCustomerDBTest:createNewCustomerDBCheckSecurityTable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">automationFramework.TestCases.CreateFundingTest:createFundingSourceChangePrimaryCardCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">automationFramework.TestCases.LinkAccountTest:linkAccountFailureTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">automationFramework.TestCases.CreateCustomerTest:createCustomerInvalidPin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">automationFramework.TestCases.ResetPasswordTest:resetPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">automationFramework.TestCases.CreateCustomerTest:createCustomerInvalidPin2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">automationFramework.TestCases.TokenSearchTest:searchTokenInvalidTokenSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">automationFramework.TestCases.UpdateFundingTest:updateNonPrimaryFundingTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">automationFramework.TestCases.CreateFundingTest:createCustomerFundingInvalidName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">automationFramework.TestCases.UpdateAddressTest:addNewAddressInvalidData</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">automationFramework.TestCases.LinkAccountAPITest:linkAccountFailureTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">automationFramework.TestCases.CreateFundingTest:createFundingSourceCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">automationFramework.TestCases.SearchTest:searchCustomerNotVerifiedTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">automationFramework.TestCases.DeleteFundingTest:deleteFundingSourceCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">automationFramework.TestCases.ResetPasswordTest:resetPasswordClose</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">automationFramework.TestCases.LinkAccountAPITest:linkAccountBankAccountMissingTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">automationFramework.TestCases.SearchTest2:searchNewSearchButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">automationFramework.TestCases.UpdateContactTest:updateContactInvalidPin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">automationFramework.TestCases.TokenSearchTest:tokenSearchAuthenticationError</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">automationFramework.TestCases.LinkAccountAPITest:linkAccountCardExpirationMissingTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">automationFramework.TestCases.CreateOrderTest:createOrderSubmit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">automationFramework.TestCases.LinkAccountDBTest:createLinkAccountDBcheck</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">automationFramework.TestCases.TokenSearchTest:searchUnregistredCustomer</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">automationFramework.TestCases.CreateFundingTest:createFundingSourceTwoCards</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">automationFramework.TestCases.CreateOrderTest:createOrderExpiredCard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">automationFramework.TestCases.TokenSearchTest:searchTokenInvalidTokenNewSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">automationFramework.TestCases.CreateOrderDBTest:createOrderDBcheck</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">automationFramework.TestCases.UpdateAddressTest:addNewAddressCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">automationFramework.TestCases.CreateCustomerTest:createCustomerContactTypeNotSelected</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">automationFramework.TestCases.EmailTest:checkEmailNewCustomer</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m68">automationFramework.TestCases.LinkAccountAPITest:linkAccountCancelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">automationFramework.TestCases.CreateFundingTest:createFundingSourceInvalidCCType</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">automationFramework.TestCases.DeleteFundingTest:deleteFundingSourceClose</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">automationFramework.TestCases.CreateFundingTest:createFundingSourceInvalidPanTooLong</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m72">automationFramework.TestCases.SearchTest:searchCustomerTypeNotSelected</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m73">automationFramework.TestCases.CreateCustomerTest:createCustomerNameMissing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m74">automationFramework.TestCases.UpdateFundingTest:updatePrimaryFundingTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m75">automationFramework.TestCases.CreateOrderDBTest:createOrderCancelDBcheck</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m76">automationFramework.TestCases.BalanceHistoryTest:viewBalanceHistoryRegisteredDynamic</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m77">automationFramework.TestCases.TokenSearchTest:searchTokenNoRecordFoundNewSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m78">automationFramework.TestCases.CreateCustomerTest:createCustomerInvalidUserName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m79">automationFramework.TestCases.TokenSearchTest:searchTokenClickHome</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m80">automationFramework.TestCases.LinkAccountTest:linkAccountCancelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m81">automationFramework.TestCases.EmailTest:checkEmailLinkAccount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m82">automationFramework.TestCases.CreateCustomerDBTest:createNewCustomerDBCheckAccountTable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m83">automationFramework.TestCases.CreateCustomerDBTest:createNewCustomerDBCheckAddressTable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m84">automationFramework.TestCases.CreateCustomerTest:createCustomerPostalCodeMissing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m85">automationFramework.TestCases.SearchTest2:searchCustomerCheckDuplicateTestEmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m86">automationFramework.TestCases.UpdateContactTest:updateContactCheckRequiredFields</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m87">automationFramework.TestCases.SearchTest:searchCustomerInvalidEmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m88">automationFramework.TestCases.TokenSearchTest:searchRegistredCustomer</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m89">automationFramework.TestCases.SearchTest:searchCustomerNoResultsTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m90">automationFramework.TestCases.CreateOrderTest:createOrderCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m91">automationFramework.TestCases.LinkAccountTest:linkAccountBankAccountMissingTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m92">automationFramework.TestCases.LinkAccountTest:linkAccountMessageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m93">automationFramework.TestCases.LinkAccountAPITest:linkAccountAlreadyLinkedTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m94">automationFramework.TestCases.CreateCustomerDBTest:createNewCustomerDBCheckPhoneTable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m95">automationFramework.TestCases.CreateFundingTest:createFundingSourceNewBillingAddress</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m96">automationFramework.TestCases.TokenSearchTest:searchTokenVerification</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m97">automationFramework.TestCases.CreateFundingTest:createFundingSourceTypeNotSelected</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m98">automationFramework.TestCases.LinkAccountTest:linkAccountAlreadyLinkedTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m99">automationFramework.TestCases.UpdateAddressTest:updateAddressCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m100">automationFramework.TestCases.UpdateFundingTest:updatePrimaryFundingCancelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m101">automationFramework.TestCases.CreateOrderTest:createOrderNewFundingSource</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m102">automationFramework.TestCases.TokenSearchTest:tokenSearchWithSpace</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m103">automationFramework.TestCases.TokenSearchAPITest:tokenVerificationLinkAccountNewSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m104">automationFramework.TestCases.TokenSearchTest:viewRegistredCustomerSubsystemPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m105">automationFramework.TestCases.UpdateContactTest:updateContactSecurityAnswermissing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m106">automationFramework.TestCases.LinkAccountTest:linkAccountTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m107">automationFramework.TestCases.CreateFundingTest:createFundingSource</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m108">automationFramework.TestCases.CreateFundingTest:createCustomerFundingInvalidCC</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m109">automationFramework.TestCases.LinkAccountAPITest:linkAccountTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m110">automationFramework.TestCases.CreateCustomerDBTest:createNewCustomerDBCheckContactTable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m111">automationFramework.TestCases.UpdateContactTest:updateContactInvalidEmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m112">automationFramework.TestCases.UpdateContactTest:updateContactOtherPhonesMissing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m113">automationFramework.TestCases.TokenSearchTest:searchRegistredCustomerVerifiedThreeInfo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m114">automationFramework.TestCases.EmailTest:checkEmailCreateOrder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m115">automationFramework.TestCases.TokenSearchTest:searchTokenMissingBankCard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m116">automationFramework.TestCases.CreateCustomerTest:createCustomerDuplicateUserName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m117">automationFramework.TestCases.LinkAccountDBTest:createLinkAccountCancellDBcheck</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m118">automationFramework.TestCases.BalanceHistoryTest:viewBalanceHistoryUnregisteredDynamic</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m119">automationFramework.TestCases.BalanceHistoryTest:viewBalanceHistoryDetailsRegisteredDynamic</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m120">automationFramework.TestCases.UpdateContactTest:updateContactInvalidUserName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m121">automationFramework.TestCases.UpdateContactTest:updateContactAndAddressCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m122">automationFramework.TestCases.CreateCustomerDBTest:createNewCustomerCancelDBCheck</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m123">automationFramework.TestCases.TokenSearchTest:searchTokenNoRecordFound</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m124">automationFramework.TestCases.TokenSearchTest:searchTokenInvalidYear</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m125">automationFramework.TestCases.CreateCustomerTest:createCustomerInvalidEmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m126">automationFramework.TestCases.SearchTest2:searchCustomerCheckDuplicateTestFnameLname</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m127">automationFramework.TestCases.TokenSearchAPITest:tokenVerificationLinkAccount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m128">automationFramework.TestCases.TokenSearchTest:searchTokenNewSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m129">automationFramework.TestCases.CreateFundingTest:createCustomerInvalidEmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m130">automationFramework.TestCases.CreateCustomerTest:createCustomerInvalidPhone</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m131">automationFramework.TestCases.UpdateContactTest:updateContactAndAddress</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m132">automationFramework.TestCases.CreateFundingTest:createFundingSourceChangePrimaryCard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

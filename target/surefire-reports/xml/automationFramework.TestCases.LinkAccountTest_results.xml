@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="898.643">
+  <properties />
+  
+  
+            <testcase name="linkAccountTest" time="262.708" classname="automationFramework.TestCases.LinkAccountTest" />
+                <testcase name="linkAccountCancelTest" time="19.168" classname="automationFramework.TestCases.LinkAccountTest" />
+                <testcase name="linkAccountFailureTest" time="20.015" classname="automationFramework.TestCases.LinkAccountTest" />
+                <testcase name="linkAccountBankAccountMissingTest" time="10.914" classname="automationFramework.TestCases.LinkAccountTest" />
+                <testcase name="linkAccountMessageTest" time="302.840" classname="automationFramework.TestCases.LinkAccountTest" />
+                <testcase name="linkAccountCardExpirationMissingTest" time="11.274" classname="automationFramework.TestCases.LinkAccountTest" />
+                <testcase name="linkAccountAlreadyLinkedTest" time="271.724" classname="automationFramework.TestCases.LinkAccountTest" />
+      
+</testsuite>

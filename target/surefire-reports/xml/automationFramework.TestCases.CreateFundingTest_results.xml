@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="12"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="250.329">
+  <properties />
+  
+  
+            <testcase name="createFundingSourceInvalidPanTooLong" time="13.946" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceTypeNotSelected" time="14.137" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceInvalidCCType" time="15.608" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceInvalidExpirationDate" time="13.561" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createCustomerFundingInvalidCC" time="17.799" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceCancel" time="73.231" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSource" time="13.582" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceNewBillingAddress" time="17.529" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceTwoCards" time="18.812" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createCustomerInvalidEmail" time="12.709" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createCustomerFundingInvalidName" time="13.799" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceChangePrimaryCard" time="25.616" classname="automationFramework.TestCases.CreateFundingTest" />
+      
+</testsuite>

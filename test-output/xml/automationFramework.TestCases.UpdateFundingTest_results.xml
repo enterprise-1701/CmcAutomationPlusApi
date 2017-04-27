@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="96.949">
+  <properties />
+  
+  
+            <testcase name="updateNonPrimaryFundingCancelTest" time="26.087" classname="automationFramework.TestCases.UpdateFundingTest" />
+                <testcase name="updateNonPrimaryFundingTest" time="31.936" classname="automationFramework.TestCases.UpdateFundingTest" />
+                <testcase name="updatePrimaryFundingTest" time="21.724" classname="automationFramework.TestCases.UpdateFundingTest" />
+                <testcase name="updatePrimaryFundingCancelTest" time="17.202" classname="automationFramework.TestCases.UpdateFundingTest" />
+      
+</testsuite>

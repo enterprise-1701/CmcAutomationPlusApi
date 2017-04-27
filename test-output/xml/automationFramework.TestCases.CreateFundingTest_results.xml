@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="13"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="304.874">
+  <properties />
+  
+  
+            <testcase name="createFundingSourceInvalidExpirationDate" time="15.870" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceChangePrimaryCardCancel" time="25.589" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createCustomerFundingInvalidName" time="18.872" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceCancel" time="73.694" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceTwoCards" time="28.031" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceInvalidCCType" time="14.163" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceInvalidPanTooLong" time="15.138" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceNewBillingAddress" time="19.214" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceTypeNotSelected" time="14.229" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSource" time="17.641" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createCustomerFundingInvalidCC" time="25.788" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createCustomerInvalidEmail" time="12.787" classname="automationFramework.TestCases.CreateFundingTest" />
+                <testcase name="createFundingSourceChangePrimaryCard" time="23.858" classname="automationFramework.TestCases.CreateFundingTest" />
+      
+</testsuite>

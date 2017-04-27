@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="69.244">
+  <properties />
+  
+  
+            <testcase name="createOrderExpiredCard" time="14.322" classname="automationFramework.TestCases.CreateOrderAPITest" />
+                <testcase name="createOrderCancel" time="15.624" classname="automationFramework.TestCases.CreateOrderAPITest" />
+                <testcase name="createOrderNewFundingSource" time="21.433" classname="automationFramework.TestCases.CreateOrderAPITest" />
+                <testcase name="createOrderSubmit" time="17.865" classname="automationFramework.TestCases.CreateOrderAPITest" />
+      
+</testsuite>

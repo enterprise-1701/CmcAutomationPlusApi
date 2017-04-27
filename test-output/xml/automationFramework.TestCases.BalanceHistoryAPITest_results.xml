@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="317.439">
+  <properties />
+  
+  
+            <testcase name="viewBalanceHistoryRegisteredDynamic" time="49.052" classname="automationFramework.TestCases.BalanceHistoryAPITest" />
+                <testcase name="viewBalanceHistoryFilterTest" time="52.541" classname="automationFramework.TestCases.BalanceHistoryAPITest" />
+                <testcase name="viewBalanceHistoryUnregisteredDynamic" time="159.977" classname="automationFramework.TestCases.BalanceHistoryAPITest" />
+                <testcase name="viewBalanceHistoryDetailsRegisteredDynamic" time="55.869" classname="automationFramework.TestCases.BalanceHistoryAPITest" />
+      
+</testsuite>

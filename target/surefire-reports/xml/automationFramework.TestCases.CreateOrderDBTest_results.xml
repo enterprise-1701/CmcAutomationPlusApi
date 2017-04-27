@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="46.713">
+  <properties />
+  
+  
+            <testcase name="createOrderCancelDBcheck" time="20.902" classname="automationFramework.TestCases.CreateOrderDBTest" />
+                <testcase name="createOrderDBcheck" time="25.811" classname="automationFramework.TestCases.CreateOrderDBTest" />
+      
+</testsuite>

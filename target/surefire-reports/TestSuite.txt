@@ -1,0 +1,254 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 131, Failures: 30, Errors: 0, Skipped: 0, Time elapsed: 7,313.912 sec <<< FAILURE!
+viewBalanceHistoryDetailsRegisteredDynamic(automationFramework.TestCases.BalanceHistoryTest)  Time elapsed: 95.167 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at automationFramework.PageObjects.BalanceHistoryPage.clickRow(BalanceHistoryPage.java:93)
+	at automationFramework.TestCases.BalanceHistoryTest.viewBalanceHistoryDetailsRegisteredDynamic(BalanceHistoryTest.java:113)
+createNewCustomerApi(automationFramework.TestCases.CreateCustomerAPITest)  Time elapsed: 8.445 sec  <<< FAILURE!
+java.lang.AssertionError: expected [4033311371] but found [4033311371,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.CreateCustomerAPITest.createNewCustomerApi(CreateCustomerAPITest.java:73)
+createNewCustomer(automationFramework.TestCases.CreateCustomerTest)  Time elapsed: 14.505 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2063354211] but found [2063354211,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.CreateCustomerTest.createNewCustomer(CreateCustomerTest.java:62)
+createNewCustomerGmailPlus(automationFramework.TestCases.CreateCustomerTest)  Time elapsed: 14.529 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2467613571] but found [2467613571,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.CreateCustomerTest.createNewCustomerGmailPlus(CreateCustomerTest.java:357)
+createOrderNewFundingSource(automationFramework.TestCases.CreateOrderTest)  Time elapsed: 23.332 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: unknown error: Element <button class="btn btn-primary cmc btn-sm" id="orderCreationFrom_submit_button" type="submit">...</button> is not clickable at point (34, 473). Other element would receive the click: <div class="ui-widget-overlay ui-dialog-mask" style="z-index: 1004;"></div>
+  (Session info: chrome=57.0.2987.133)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'NACTS-081729', ip: '149.63.89.30', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\200123\AppData\Local\Temp\scoped_dir26484_24604}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: f99e4e9e9abc346a904c0be2ca3fd669
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at automationFramework.PageObjects.CreateOrderPage.clickSubmit(CreateOrderPage.java:52)
+	at automationFramework.TestCases.CreateOrderTest.createOrderNewFundingSource(CreateOrderTest.java:165)
+registerNewCustomerNoRecordFound(automationFramework.TestCases.CreateUnregistredCustomerTest)  Time elapsed: 45.671 sec  <<< FAILURE!
+java.lang.AssertionError: expected [8265725406] but found [8265725406,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.CreateUnregistredCustomerTest.verifyNewCustomerCreation(CreateUnregistredCustomerTest.java:185)
+	at automationFramework.TestCases.CreateUnregistredCustomerTest.registerNewCustomerNoRecordFound(CreateUnregistredCustomerTest.java:63)
+registerNewCustomerTranistTokenFound(automationFramework.TestCases.CreateUnregistredCustomerTest)  Time elapsed: 52.516 sec  <<< FAILURE!
+java.lang.AssertionError: expected [5353451375] but found [5353451375,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.CreateUnregistredCustomerTest.verifyNewCustomerCreation(CreateUnregistredCustomerTest.java:185)
+	at automationFramework.TestCases.CreateUnregistredCustomerTest.registerNewCustomerTranistTokenFound(CreateUnregistredCustomerTest.java:104)
+registerNewCustomerInvalidToken(automationFramework.TestCases.CreateUnregistredCustomerTest)  Time elapsed: 16.893 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2722157441] but found [2722157441,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.CreateUnregistredCustomerTest.verifyNewCustomerCreation(CreateUnregistredCustomerTest.java:185)
+	at automationFramework.TestCases.CreateUnregistredCustomerTest.registerNewCustomerInvalidToken(CreateUnregistredCustomerTest.java:130)
+registerNewCustomerSubysystemPage(automationFramework.TestCases.CreateUnregistredCustomerTest)  Time elapsed: 86.707 sec  <<< FAILURE!
+java.lang.AssertionError: expected [6556762132] but found [6556762132,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.CreateUnregistredCustomerTest.verifyNewCustomerCreation(CreateUnregistredCustomerTest.java:185)
+	at automationFramework.TestCases.CreateUnregistredCustomerTest.registerNewCustomerSubysystemPage(CreateUnregistredCustomerTest.java:168)
+checkEmailUpdateContact(automationFramework.TestCases.EmailTest)  Time elapsed: 20.832 sec  <<< FAILURE!
+java.lang.AssertionError: expected [indy] but found [robert]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.CoreTest.updateContact(CoreTest.java:104)
+	at automationFramework.TestCases.EmailTest.checkEmailUpdateContact(EmailTest.java:167)
+checkEmailResetPassword(automationFramework.TestCases.EmailTest)  Time elapsed: 832.639 sec  <<< FAILURE!
+java.lang.AssertionError: Password Reset Verification Email Test Failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at automationFramework.TestCases.EmailTest.checkEmailResetPassword(EmailTest.java:198)
+checkEmailDeleteFunding(automationFramework.TestCases.EmailTest)  Time elapsed: 21.956 sec  <<< FAILURE!
+java.lang.AssertionError: Customer Funding Source Update Email Test Failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at automationFramework.TestCases.EmailTest.checkEmailDeleteFunding(EmailTest.java:227)
+resetPassword(automationFramework.TestCases.ResetPasswordTest)  Time elapsed: 45.155 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Reset Password Confirmation] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.ResetPasswordTest.resetPassword(ResetPasswordTest.java:55)
+resetPasswordClose(automationFramework.TestCases.ResetPasswordTest)  Time elapsed: 0.402 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Reset Password Confirmation] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.ResetPasswordTest.resetPasswordClose(ResetPasswordTest.java:79)
+searchCustomerVerifiedTest(automationFramework.TestCases.SearchTest)  Time elapsed: 2.27 sec  <<< FAILURE!
+java.lang.AssertionError: expected [4033311371] but found [4033311371,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.SearchTest.searchCustomerVerifiedTest(SearchTest.java:76)
+searchCustomerCheckDuplicateTestFname(automationFramework.TestCases.SearchTest)  Time elapsed: 7.25 sec  <<< FAILURE!
+java.lang.AssertionError: expected [robert] but found [Robert]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.SearchTest.searchCustomerCheckDuplicateTestFname(SearchTest.java:176)
+searchCustomerCheckDuplicateTestPhone(automationFramework.TestCases.SearchTest2)  Time elapsed: 17.928 sec  <<< FAILURE!
+java.lang.AssertionError: expected [7362133160] but found [7362133160,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.SearchTest2.searchCustomerCheckDuplicateTestPhone(SearchTest2.java:76)
+searchCustomerCheckDuplicateTestEmailPhone(automationFramework.TestCases.SearchTest2)  Time elapsed: 7.561 sec  <<< FAILURE!
+java.lang.AssertionError: expected [7362133160] but found [7362133160,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.SearchTest2.searchCustomerCheckDuplicateTestEmailPhone(SearchTest2.java:103)
+searchCustomerCheckDuplicateTestAll(automationFramework.TestCases.SearchTest2)  Time elapsed: 8.298 sec  <<< FAILURE!
+java.lang.AssertionError: expected [7362133160] but found [7362133160,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.SearchTest2.searchCustomerCheckDuplicateTestAll(SearchTest2.java:122)
+searchCustomerVerifiedThreeInfoTest(automationFramework.TestCases.SearchTest2)  Time elapsed: 9.447 sec  <<< FAILURE!
+java.lang.AssertionError: expected [4033311371] but found [4033311371,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.SearchTest2.searchCustomerVerifiedThreeInfoTest(SearchTest2.java:232)
+searchCustomerNotVerifiedThreeInfoTest(automationFramework.TestCases.SearchTest2)  Time elapsed: 8.968 sec  <<< FAILURE!
+java.lang.AssertionError: expected [4033311371] but found [4033311371,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.SearchTest2.searchCustomerNotVerifiedThreeInfoTest(SearchTest2.java:277)
+searchCustomerClickNotVerified(automationFramework.TestCases.SearchTest2)  Time elapsed: 8.842 sec  <<< FAILURE!
+java.lang.AssertionError: expected [4033311371] but found [4033311371,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.SearchTest2.searchCustomerClickNotVerified(SearchTest2.java:309)
+viewTravelHistoryRegistredCustomerSubAccount(automationFramework.TestCases.TravelHistoryTest)  Time elapsed: 434.151 sec  <<< FAILURE!
+java.lang.AssertionError: expected [$2.50] but found [$10.00]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.TravelHistoryTest.viewTravelHistoryRegistredCustomerSubAccount(TravelHistoryTest.java:143)
+viewTravelHistoryUnregistredCustomer(automationFramework.TestCases.TravelHistoryTest)  Time elapsed: 418.917 sec  <<< FAILURE!
+java.lang.AssertionError: expected [$2.50] but found [$10.00]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.TravelHistoryTest.viewTravelHistoryUnregistredCustomer(TravelHistoryTest.java:86)
+addNewAddress(automationFramework.TestCases.UpdateAddressTest)  Time elapsed: 8.891 sec  <<< FAILURE!
+java.lang.AssertionError: expected [4033311371] but found [4033311371,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.UpdateAddressTest.addNewAddress(UpdateAddressTest.java:59)
+updateAddress(automationFramework.TestCases.UpdateAddressTest)  Time elapsed: 8.904 sec  <<< FAILURE!
+java.lang.AssertionError: expected [mQkC44ipf3Fv@mailinator.com] but found [eEeiUvQKYwBs@mailinator.com]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.UpdateAddressTest.updateAddress(UpdateAddressTest.java:115)
+addNewAddressInvalidData(automationFramework.TestCases.UpdateAddressTest)  Time elapsed: 13.583 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Postal Code is invalid.] but found [Zip Code is invalid.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.UpdateAddressTest.addNewAddressInvalidData(UpdateAddressTest.java:200)
+updateContact(automationFramework.TestCases.UpdateContactTest)  Time elapsed: 16.206 sec  <<< FAILURE!
+java.lang.AssertionError: expected [indy] but found [robert]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.UpdateContactTest.updateContact(UpdateContactTest.java:60)
+updateContactCancel(automationFramework.TestCases.UpdateContactTest)  Time elapsed: 12.463 sec  <<< FAILURE!
+java.lang.AssertionError: expected [4033311371] but found [4033311371,undefined,undefined]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.UpdateContactTest.updateContactCancel(UpdateContactTest.java:88)
+updateContactInvalidPhone(automationFramework.TestCases.UpdateContactTest)  Time elapsed: 15.108 sec  <<< FAILURE!
+java.lang.AssertionError: expected [phone[0].number errors.general.invalid.phone.number] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at automationFramework.TestCases.UpdateContactTest.updateContactInvalidPhone(UpdateContactTest.java:188)

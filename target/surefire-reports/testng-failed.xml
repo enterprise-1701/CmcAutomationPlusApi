@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Automation - Suite]">
+  <parameter name="browser" value="chrome.exe"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome.exe"/>
+    <classes>
+      <class name="automationFramework.TestCases.ResetPasswordTest">
+        <methods>
+          <include name="resetPassword"/>
+          <include name="resetPasswordClose"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.ResetPasswordTest -->
+      <class name="automationFramework.TestCases.UpdateContactTest">
+        <methods>
+          <include name="updateContactInvalidPhone"/>
+          <include name="tearDown"/>
+          <include name="updateContactCancel"/>
+          <include name="setUp"/>
+          <include name="updateContact"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.UpdateContactTest -->
+      <class name="automationFramework.TestCases.CreateCustomerDBTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.CreateCustomerDBTest -->
+      <class name="automationFramework.TestCases.CreateUnregistredCustomerTest">
+        <methods>
+          <include name="registerNewCustomerTranistTokenFound"/>
+          <include name="registerNewCustomerNoRecordFound"/>
+          <include name="tearDown"/>
+          <include name="registerNewCustomerSubysystemPage"/>
+          <include name="registerNewCustomerInvalidToken"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.CreateUnregistredCustomerTest -->
+      <class name="automationFramework.TestCases.DeleteFundingTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.DeleteFundingTest -->
+      <class name="automationFramework.TestCases.LinkAccountAPITest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.LinkAccountAPITest -->
+      <class name="automationFramework.TestCases.LinkAccountTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.LinkAccountTest -->
+      <class name="automationFramework.TestCases.CreateOrderDBTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.CreateOrderDBTest -->
+      <class name="automationFramework.TestCases.CreateFundingTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.CreateFundingTest -->
+      <class name="automationFramework.TestCases.LinkAccountDBTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.LinkAccountDBTest -->
+      <class name="automationFramework.TestCases.CreateCustomerAPITest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="createNewCustomerApi"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.CreateCustomerAPITest -->
+      <class name="automationFramework.TestCases.SearchTest">
+        <methods>
+          <include name="searchCustomerCheckDuplicateTestFname"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="searchCustomerVerifiedTest"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.SearchTest -->
+      <class name="automationFramework.TestCases.TokenSearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.TokenSearchTest -->
+      <class name="automationFramework.TestCases.TravelHistoryTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="viewTravelHistoryUnregistredCustomer"/>
+          <include name="viewTravelHistoryRegistredCustomerSubAccount"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.TravelHistoryTest -->
+      <class name="automationFramework.TestCases.SearchTest2">
+        <methods>
+          <include name="searchCustomerClickNotVerified"/>
+          <include name="searchCustomerNotVerifiedThreeInfoTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="searchCustomerCheckDuplicateTestPhone"/>
+          <include name="searchCustomerCheckDuplicateTestAll"/>
+          <include name="searchCustomerVerifiedThreeInfoTest"/>
+          <include name="searchCustomerCheckDuplicateTestEmailPhone"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.SearchTest2 -->
+      <class name="automationFramework.TestCases.BalanceHistoryTest">
+        <methods>
+          <include name="viewBalanceHistoryDetailsRegisteredDynamic"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.BalanceHistoryTest -->
+      <class name="automationFramework.TestCases.CreateCustomerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createNewCustomerGmailPlus"/>
+          <include name="setUp"/>
+          <include name="createNewCustomer"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.CreateCustomerTest -->
+      <class name="automationFramework.TestCases.EmailTest">
+        <methods>
+          <include name="checkEmailResetPassword"/>
+          <include name="checkEmailUpdateContact"/>
+          <include name="tearDown"/>
+          <include name="checkEmailDeleteFunding"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.EmailTest -->
+      <class name="automationFramework.TestCases.UpdateFundingTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.UpdateFundingTest -->
+      <class name="automationFramework.TestCases.UpdateAddressTest">
+        <methods>
+          <include name="addNewAddressInvalidData"/>
+          <include name="updateAddress"/>
+          <include name="addNewAddress"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.UpdateAddressTest -->
+      <class name="automationFramework.TestCases.CreateOrderTest">
+        <methods>
+          <include name="createOrderNewFundingSource"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.CreateOrderTest -->
+      <class name="automationFramework.TestCases.TokenSearchAPITest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.TokenSearchAPITest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Automation - Suite] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="16"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="286.459">
+  <properties />
+  
+  
+            <testcase name="searchTokenInvalidMonth" time="7.221" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenInvalidTokenSearch" time="8.346" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="tokenSearchAuthenticationError" time="6.312" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchUnregistredCustomer" time="16.712" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenInvalidTokenNewSearch" time="9.887" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenNoRecordFoundNewSearch" time="7.241" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenClickHome" time="17.257" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchRegistredCustomer" time="41.633" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenVerification" time="14.037" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="tokenSearchWithSpace" time="39.498" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="viewRegistredCustomerSubsystemPage" time="45.868" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchRegistredCustomerVerifiedThreeInfo" time="41.268" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenMissingBankCard" time="6.811" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenNoRecordFound" time="7.972" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenInvalidYear" time="9.102" classname="automationFramework.TestCases.TokenSearchTest" />
+                <testcase name="searchTokenNewSearch" time="7.294" classname="automationFramework.TestCases.TokenSearchTest" />
+      
+</testsuite>

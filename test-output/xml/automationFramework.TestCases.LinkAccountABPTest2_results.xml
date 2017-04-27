@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FirefoxTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="57.893">
+  <properties />
+  
+  
+            <testcase name="loadValueABPTest" time="57.893" classname="automationFramework.TestCases.LinkAccountABPTest2" />
+      
+</testsuite>

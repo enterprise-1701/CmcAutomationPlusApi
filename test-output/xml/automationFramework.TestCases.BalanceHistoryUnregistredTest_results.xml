@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FirefoxTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="56.257">
+  <properties />
+  
+  
+            <testcase name="loadValueABPTest" time="56.257" classname="automationFramework.TestCases.BalanceHistoryUnregistredTest" />
+      
+</testsuite>

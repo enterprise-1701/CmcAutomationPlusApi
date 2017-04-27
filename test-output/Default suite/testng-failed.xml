@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="automationFramework.TestCases.UpdateContactTest">
+        <methods>
+          <include name="updateContactInvalidUserName"/>
+          <include name="updateContactInvalidPin"/>
+          <include name="updateContactAndAddressCancel"/>
+          <include name="updateContactInvalidPhone"/>
+          <include name="updateContactInvalidEmail"/>
+          <include name="updateContactSecurityAnswermissing"/>
+          <include name="updateContactCancel"/>
+          <include name="updateContactAndAddress"/>
+          <include name="updateContact"/>
+          <include name="updateContactCheckRequiredFields"/>
+          <include name="updateContactOtherPhonesMissing"/>
+        </methods>
+      </class> <!-- automationFramework.TestCases.UpdateContactTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

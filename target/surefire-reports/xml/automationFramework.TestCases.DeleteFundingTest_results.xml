@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="44.136">
+  <properties />
+  
+  
+            <testcase name="deleteFundingSource" time="15.090" classname="automationFramework.TestCases.DeleteFundingTest" />
+                <testcase name="deleteFundingSourceClose" time="14.673" classname="automationFramework.TestCases.DeleteFundingTest" />
+                <testcase name="deleteFundingSourceCancel" time="14.373" classname="automationFramework.TestCases.DeleteFundingTest" />
+      
+</testsuite>

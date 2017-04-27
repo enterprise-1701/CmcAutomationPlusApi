@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="63.465">
+  <properties />
+  
+  
+            <testcase name="searchCustomerCheckDuplicateTestFname" time="7.934" classname="automationFramework.TestCases.SearchAPITest" />
+                <testcase name="searchCustomerInvalidEmail" time="8.461" classname="automationFramework.TestCases.SearchAPITest" />
+                <testcase name="searchCustomerNoResultsTest" time="8.858" classname="automationFramework.TestCases.SearchAPITest" />
+                <testcase name="searchCustomerTypeNotSelected" time="9.931" classname="automationFramework.TestCases.SearchAPITest" />
+                <testcase name="searchCustomerCheckDuplicateTestLname" time="8.403" classname="automationFramework.TestCases.SearchAPITest" />
+                <testcase name="searchCustomerNotVerifiedTest" time="9.601" classname="automationFramework.TestCases.SearchAPITest" />
+                <testcase name="searchCustomerVerifiedTest" time="10.277" classname="automationFramework.TestCases.SearchAPITest" />
+      
+</testsuite>
